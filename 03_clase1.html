@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de Clases en HTML</title>
+  <style>
+body{
+    background-color: rgb(82, 49, 143);
+}
+.red{
+color: red;
+}
+.bold{
+font-weight: bold;
+}
+/*estilos aplicados a la clase "green"*/
+.green{
+  background-color: rgb(50, 155, 50);
+  border: 2px dashed white;
+}
+
+  </style>
+</head>
+<body>
+  <h2 class="red bold">
+    Este título combina los estilos aplicados de la clase "red"
+    y "bold".
+  </h2>
+  <!--A este párrafo le voy a poner tres clases distintas-->
+  <p class="red green bold">A este párrafo no se le ha aplicado ninguna clase.</p>
+  <!--A este elemento le voy a cambiar la clase a "green" -->
+  <p class="green">Pero a este sí</p>
+  <div class="bold">Y a este div también</div>
+</body>
+</html>

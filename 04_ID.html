@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo con ID en CSS</title>
+  <style>
+    /* Estilo aplicado al elemento con ID "tituloPrincipal" */
+    #tituloPrincipal {
+      color: darkgreen; font-size: 28px; text-align: center;
+      border-bottom: 2px solid darkgreen; padding-bottom: 10px;
+    }
+    /* Estilo aplicado al elemento con ID "parrafoDestacado" */
+    #parrafoDestacado {
+      background-color: lightyellow; font-style: italic; padding: 10px;
+      border: 1px solid orange; border-radius: 8px;
+    }
+    /*Estilo aplicado al h1*/
+    #nuevo{
+      background-color: rgb(107, 230, 219);
+      border: 3px dotted rgb(120, 19, 236)
+    }
+  </style>
+</head>
+<body>
+  <!-- identificamos h1 como tituloPrincipal -->
+   <!--Al h1 le he creado un id nuevo-->
+  <h1 id="nuevo">Este es el título principal</h1>
+
+  <!-- identificamos p como parrafoDestacado -->
+  <p id="parrafoDestacado">Este párrafo está destacado con un identificador único.</p>
+
+  <!-- Otro párrafo normal sin ID -->
+  
+  <!-- Al párrafo le he puesto el id del h1-->
+  <p id="tituloPrincipal">Este párrafo no tiene ID, así que no recibe el estilo especial.</p>
+</body>
+</html>
+

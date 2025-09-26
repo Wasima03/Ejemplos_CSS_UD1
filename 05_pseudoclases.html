@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="https://www.w3schools.com/" target="_blank"/>
+	<style>
+    	a {
+        	margin: 4px; padding: 3px; border: 2px solid;
+    	}
+    	button {
+        	margin: 5px;
+    	}
+    	a:link {
+        	border-color: grey; background-color: silver; color: grey;
+    	}
+    	a:hover {
+			/*Al pasar el ratón se agranda*/
+        	border-color: lightyellow; background-color: darkgrey; color: lightyellow; padding: 10px;
+    	}
+    	a:active {
+        	border-color: beige; background-color: dimgrey; color: beige;
+    	}
+    	a:visited {
+			/*cambio de color*/
+        	color: rgb(166, 39, 240);
+    	}
+    	input:disabled {
+			/*cambio de color*/
+        	background-color: #da1717;
+    	}
+    	input:enabled {
+			/*cambio de color y*/
+        	background-color:rgb(95, 245, 89);
+			padding: 10px;
+    	}
+    	input:checked {
+        	width: 20px; height: 20px;
+			
+    	}
+		/*Al pasar el ratón sobre el botón,cambia de color y se hace más grande*/
+		button:hover{
+			background-color: rgb(118, 118, 248);
+			padding: 5px;
+		}
+	</style>
+	<script>
+    	function habilitarDeshabilitar(){
+        	   element = document.querySelector("input[type='text']");
+        	   if (element.disabled) {
+            	element.removeAttribute("disabled");
+            	document.getElementsByTagName("button")[0].innerHTML = "Habilitar";
+        	   } else {
+            	element.setAttribute('disabled', '');
+            	document.getElementsByTagName("button")[0].innerHTML = "Deshabilitar";
+        	   }
+    	}
+	</script>
+</head>
+<body>
+	<input type="text" placeholder="Pon algo..." disabled/>
+	<input type="checkbox" name="checkbox">
+	<label for="checkbox">Selecionar</label>
+	<br/><br/>  
+	<nav>
+    	<a href="/html/">HTML</a> |
+    	<a href="/css/">CSS</a> |
+    	<a href="/js/">JavaScript</a> |
+    	<a href="/python/">Python</a>
+	</nav>
+	<button onclick="habilitarDeshabilitar()">Habilitar</button>
+</body>
+</html>
+
+
